@@ -3,8 +3,8 @@ import { z } from "zod";
 export const todoCreateValidate = z.object({
   body: z.object({
     title: z.string(),
-    isDone: z.boolean(),
-    isImportant: z.boolean(),
+    isDone: z.boolean().optional(),
+    isImportant: z.boolean().optional(),
   }),
 });
 
