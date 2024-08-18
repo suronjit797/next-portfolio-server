@@ -18,7 +18,7 @@ const transactionSchema = new Schema<TTransactions>(
     },
     isPending: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     isImportant: {
       type: Boolean,
